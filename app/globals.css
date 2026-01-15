@@ -1,0 +1,1175 @@
+@import "tailwindcss";
+
+/* ============================================
+   CSS Custom Properties for Skins
+   ============================================ */
+
+@property --color-1 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #7c3aed;
+}
+
+@property --color-2 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #2563eb;
+}
+
+@property --color-3 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #06b6d4;
+}
+
+@property --gradient-angle {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+}
+
+:root {
+    /* Base theme variables */
+    --clock-background: 0 0% 100%;
+    --clock-foreground: 0 0% 8%;
+    --clock-accent: 35 100% 50%;
+    --clock-muted: 0 0% 60%;
+    --clock-border: 0 0% 90%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 0 0% 90%;
+
+    /* Font variables */
+    --font-sans: "Inter", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", "SF Mono", monospace;
+    --font-serif: "Playfair Display", Georgia, serif;
+}
+
+/* ============================================
+   DIGITAL SKINS
+   ============================================ */
+
+.skin-zen-minimal {
+    --clock-background: 0 0% 100%;
+    --clock-foreground: 0 0% 8%;
+    --clock-accent: 0 0% 20%;
+    --clock-muted: 0 0% 60%;
+    --clock-border: 0 0% 90%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 0 0% 85%;
+}
+
+.skin-oled-night {
+    --clock-background: 0 0% 0%;
+    --clock-foreground: 180 100% 50%;
+    --clock-accent: 180 100% 50%;
+    --clock-muted: 180 50% 30%;
+    --clock-border: 180 50% 20%;
+    --clock-glow: 180 100% 50% / 0.5;
+    --clock-ring: 180 100% 50%;
+}
+
+.skin-terminal-green {
+    --clock-background: 0 0% 5%;
+    --clock-foreground: 120 100% 50%;
+    --clock-accent: 120 100% 40%;
+    --clock-muted: 120 50% 25%;
+    --clock-border: 120 50% 15%;
+    --clock-glow: 120 100% 50% / 0.4;
+    --clock-ring: 120 100% 50%;
+}
+
+.skin-swiss-railway {
+    --clock-background: 0 0% 98%;
+    --clock-foreground: 0 0% 10%;
+    --clock-accent: 0 85% 50%;
+    --clock-muted: 0 0% 50%;
+    --clock-border: 0 0% 85%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 0 85% 50%;
+}
+
+.skin-aurora-glass {
+    --clock-background: 220 30% 15%;
+    --clock-foreground: 0 0% 95%;
+    --clock-accent: 280 80% 60%;
+    --clock-muted: 220 20% 50%;
+    --clock-border: 220 30% 25%;
+    --clock-glow: 280 80% 60% / 0.4;
+    --clock-ring: 280 80% 60%;
+}
+
+.skin-cyber-neon {
+    --clock-background: 260 30% 8%;
+    --clock-foreground: 320 100% 60%;
+    --clock-accent: 180 100% 50%;
+    --clock-muted: 280 50% 40%;
+    --clock-border: 260 30% 20%;
+    --clock-glow: 320 100% 60% / 0.6;
+    --clock-ring: 180 100% 50%;
+}
+
+.skin-paper-book {
+    --clock-background: 40 30% 96%;
+    --clock-foreground: 30 20% 20%;
+    --clock-accent: 30 60% 40%;
+    --clock-muted: 30 15% 50%;
+    --clock-border: 30 20% 85%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 30 40% 70%;
+}
+
+.skin-monochrome-brutal {
+    --clock-background: 0 0% 95%;
+    --clock-foreground: 0 0% 0%;
+    --clock-accent: 0 0% 50%;
+    --clock-muted: 0 0% 40%;
+    --clock-border: 0 0% 0%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 0 0% 0%;
+}
+
+/* New Digital Skins */
+
+.skin-retro-lcd {
+    --clock-background: 80 25% 75%;
+    --clock-foreground: 80 30% 20%;
+    --clock-accent: 80 40% 30%;
+    --clock-muted: 80 20% 40%;
+    --clock-border: 80 20% 65%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 80 30% 40%;
+}
+
+.skin-sunset-glow {
+    --clock-background: 20 40% 12%;
+    --clock-foreground: 35 100% 65%;
+    --clock-accent: 350 80% 60%;
+    --clock-muted: 30 50% 45%;
+    --clock-border: 20 30% 25%;
+    --clock-glow: 35 100% 60% / 0.4;
+    --clock-ring: 350 80% 60%;
+}
+
+.skin-ocean-deep {
+    --clock-background: 210 50% 8%;
+    --clock-foreground: 195 100% 70%;
+    --clock-accent: 210 80% 50%;
+    --clock-muted: 200 50% 40%;
+    --clock-border: 210 40% 20%;
+    --clock-glow: 195 100% 60% / 0.4;
+    --clock-ring: 210 80% 50%;
+}
+
+.skin-rose-gold {
+    --clock-background: 0 0% 5%;
+    --clock-foreground: 15 50% 70%;
+    --clock-accent: 350 40% 60%;
+    --clock-muted: 15 30% 45%;
+    --clock-border: 350 20% 20%;
+    --clock-glow: 15 50% 60% / 0.3;
+    --clock-ring: 350 40% 60%;
+}
+
+.skin-matrix-rain {
+    --clock-background: 120 100% 2%;
+    --clock-foreground: 120 100% 45%;
+    --clock-accent: 120 100% 30%;
+    --clock-muted: 120 50% 25%;
+    --clock-border: 120 50% 10%;
+    --clock-glow: 120 100% 45% / 0.5;
+    --clock-ring: 120 100% 40%;
+}
+
+.skin-midnight-purple {
+    --clock-background: 270 30% 8%;
+    --clock-foreground: 280 60% 75%;
+    --clock-accent: 260 70% 60%;
+    --clock-muted: 270 40% 45%;
+    --clock-border: 270 30% 20%;
+    --clock-glow: 280 60% 65% / 0.4;
+    --clock-ring: 260 70% 60%;
+}
+
+.skin-coffee-shop {
+    --clock-background: 30 30% 94%;
+    --clock-foreground: 25 40% 25%;
+    --clock-accent: 25 60% 45%;
+    --clock-muted: 25 25% 50%;
+    --clock-border: 30 25% 85%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 25 50% 55%;
+}
+
+.skin-arctic-ice {
+    --clock-background: 200 20% 98%;
+    --clock-foreground: 200 50% 30%;
+    --clock-accent: 195 80% 50%;
+    --clock-muted: 200 30% 55%;
+    --clock-border: 200 20% 88%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 195 70% 60%;
+}
+
+.skin-spotify-dark {
+    --clock-background: 0 0% 7%;
+    --clock-foreground: 0 0% 95%;
+    --clock-accent: 141 73% 42%;
+    --clock-muted: 0 0% 50%;
+    --clock-border: 0 0% 18%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 141 73% 42%;
+}
+
+.skin-red-ember {
+    --clock-background: 0 0% 3%;
+    --clock-foreground: 0 80% 55%;
+    --clock-accent: 15 90% 50%;
+    --clock-muted: 0 50% 35%;
+    --clock-border: 0 40% 15%;
+    --clock-glow: 0 80% 50% / 0.5;
+    --clock-ring: 15 90% 50%;
+}
+
+.skin-lavender-dream {
+    --clock-background: 270 30% 96%;
+    --clock-foreground: 270 40% 35%;
+    --clock-accent: 280 50% 60%;
+    --clock-muted: 270 25% 55%;
+    --clock-border: 270 25% 88%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 280 45% 65%;
+}
+
+.skin-forest-night {
+    --clock-background: 150 30% 8%;
+    --clock-foreground: 140 40% 65%;
+    --clock-accent: 160 50% 45%;
+    --clock-muted: 145 30% 40%;
+    --clock-border: 150 25% 18%;
+    --clock-glow: 140 40% 55% / 0.3;
+    --clock-ring: 160 50% 45%;
+}
+
+.skin-warm-sand {
+    --clock-background: 40 40% 94%;
+    --clock-foreground: 35 30% 25%;
+    --clock-accent: 30 70% 50%;
+    --clock-muted: 35 25% 50%;
+    --clock-border: 40 30% 85%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 30 60% 55%;
+}
+
+.skin-electric-blue {
+    --clock-background: 220 40% 6%;
+    --clock-foreground: 200 100% 60%;
+    --clock-accent: 220 100% 55%;
+    --clock-muted: 210 60% 40%;
+    --clock-border: 220 40% 18%;
+    --clock-glow: 200 100% 55% / 0.6;
+    --clock-ring: 220 100% 55%;
+}
+
+.skin-newspaper {
+    --clock-background: 45 20% 92%;
+    --clock-foreground: 0 0% 10%;
+    --clock-accent: 0 0% 40%;
+    --clock-muted: 45 10% 50%;
+    --clock-border: 45 15% 82%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 0 0% 50%;
+}
+
+.skin-synthwave {
+    --clock-background: 280 60% 10%;
+    --clock-foreground: 320 100% 70%;
+    --clock-accent: 50 100% 60%;
+    --clock-muted: 300 50% 50%;
+    --clock-border: 280 50% 22%;
+    --clock-glow: 320 100% 65% / 0.6;
+    --clock-ring: 50 100% 60%;
+}
+
+/* New Digital Skins - Gradients & Patterns */
+
+.skin-sunset-beach {
+    --clock-background: 25 60% 15%;
+    --clock-foreground: 35 100% 75%;
+    --clock-accent: 340 80% 65%;
+    --clock-muted: 30 50% 50%;
+    --clock-border: 25 50% 28%;
+    --clock-glow: 35 100% 70% / 0.4;
+    --clock-ring: 340 80% 65%;
+}
+
+.skin-northern-lights {
+    --clock-background: 200 40% 8%;
+    --clock-foreground: 160 80% 65%;
+    --clock-accent: 180 90% 50%;
+    --clock-muted: 170 50% 45%;
+    --clock-border: 200 35% 20%;
+    --clock-glow: 160 80% 55% / 0.5;
+    --clock-ring: 180 90% 50%;
+}
+
+.skin-cotton-candy {
+    --clock-background: 300 40% 92%;
+    --clock-foreground: 280 50% 40%;
+    --clock-accent: 200 70% 60%;
+    --clock-muted: 290 35% 55%;
+    --clock-border: 300 30% 85%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 200 70% 60%;
+}
+
+.skin-midnight-galaxy {
+    --clock-background: 260 50% 5%;
+    --clock-foreground: 270 60% 80%;
+    --clock-accent: 200 100% 70%;
+    --clock-muted: 265 40% 50%;
+    --clock-border: 260 45% 18%;
+    --clock-glow: 270 60% 70% / 0.4;
+    --clock-ring: 200 100% 70%;
+}
+
+.skin-golden-hour {
+    --clock-background: 35 50% 92%;
+    --clock-foreground: 30 60% 25%;
+    --clock-accent: 40 90% 55%;
+    --clock-muted: 35 40% 50%;
+    --clock-border: 35 40% 82%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 40 85% 60%;
+}
+
+/* New Digital Skins - Dev Themes */
+
+.skin-dracula {
+    --clock-background: 231 15% 18%;
+    --clock-foreground: 326 100% 74%;
+    --clock-accent: 135 94% 65%;
+    --clock-muted: 250 20% 55%;
+    --clock-border: 231 15% 30%;
+    --clock-glow: 326 100% 70% / 0.3;
+    --clock-ring: 135 94% 65%;
+}
+
+.skin-catppuccin {
+    --clock-background: 240 21% 15%;
+    --clock-foreground: 316 72% 86%;
+    --clock-accent: 189 71% 73%;
+    --clock-muted: 260 30% 55%;
+    --clock-border: 240 20% 28%;
+    --clock-glow: 316 70% 80% / 0.3;
+    --clock-ring: 189 71% 73%;
+}
+
+.skin-solarized-dark {
+    --clock-background: 192 100% 11%;
+    --clock-foreground: 186 13% 59%;
+    --clock-accent: 175 59% 40%;
+    --clock-muted: 190 50% 35%;
+    --clock-border: 192 80% 20%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 175 59% 40%;
+}
+
+.skin-monokai {
+    --clock-background: 70 8% 15%;
+    --clock-foreground: 80 76% 53%;
+    --clock-accent: 338 95% 56%;
+    --clock-muted: 60 15% 45%;
+    --clock-border: 70 10% 28%;
+    --clock-glow: 80 76% 50% / 0.3;
+    --clock-ring: 338 95% 56%;
+}
+
+.skin-nord {
+    --clock-background: 220 16% 22%;
+    --clock-foreground: 218 27% 88%;
+    --clock-accent: 193 43% 67%;
+    --clock-muted: 219 20% 55%;
+    --clock-border: 220 16% 35%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 193 43% 67%;
+}
+
+/* New Digital Skins - Luxury */
+
+.skin-black-onyx {
+    --clock-background: 0 0% 2%;
+    --clock-foreground: 45 90% 55%;
+    --clock-accent: 45 100% 50%;
+    --clock-muted: 45 50% 35%;
+    --clock-border: 45 30% 15%;
+    --clock-glow: 45 90% 50% / 0.3;
+    --clock-ring: 45 100% 50%;
+}
+
+.skin-marble-white {
+    --clock-background: 0 0% 97%;
+    --clock-foreground: 0 0% 25%;
+    --clock-accent: 0 0% 50%;
+    --clock-muted: 0 0% 60%;
+    --clock-border: 0 0% 88%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 0 0% 60%;
+}
+
+.skin-emerald-luxury {
+    --clock-background: 160 40% 10%;
+    --clock-foreground: 45 80% 60%;
+    --clock-accent: 150 70% 45%;
+    --clock-muted: 155 30% 40%;
+    --clock-border: 160 35% 22%;
+    --clock-glow: 45 80% 55% / 0.3;
+    --clock-ring: 150 70% 45%;
+}
+
+.skin-sapphire-royal {
+    --clock-background: 220 50% 12%;
+    --clock-foreground: 220 30% 85%;
+    --clock-accent: 220 80% 60%;
+    --clock-muted: 220 30% 50%;
+    --clock-border: 220 45% 25%;
+    --clock-glow: 220 80% 55% / 0.3;
+    --clock-ring: 220 80% 60%;
+}
+
+/* New Digital Skins - Seasonal */
+
+.skin-cherry-blossom {
+    --clock-background: 350 40% 95%;
+    --clock-foreground: 340 50% 35%;
+    --clock-accent: 340 70% 65%;
+    --clock-muted: 345 35% 55%;
+    --clock-border: 350 35% 88%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 340 65% 70%;
+}
+
+.skin-autumn-leaves {
+    --clock-background: 30 30% 15%;
+    --clock-foreground: 35 80% 60%;
+    --clock-accent: 15 90% 50%;
+    --clock-muted: 30 50% 45%;
+    --clock-border: 30 28% 28%;
+    --clock-glow: 35 80% 55% / 0.3;
+    --clock-ring: 15 90% 50%;
+}
+
+.skin-winter-frost {
+    --clock-background: 200 30% 96%;
+    --clock-foreground: 210 40% 35%;
+    --clock-accent: 200 70% 60%;
+    --clock-muted: 205 30% 55%;
+    --clock-border: 200 25% 88%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 200 65% 65%;
+}
+
+.skin-summer-vibes {
+    --clock-background: 45 100% 95%;
+    --clock-foreground: 25 80% 35%;
+    --clock-accent: 35 100% 55%;
+    --clock-muted: 40 60% 50%;
+    --clock-border: 45 80% 88%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 35 95% 60%;
+}
+
+/* New Digital Skins - Retro */
+
+.skin-windows-95 {
+    --clock-background: 180 30% 45%;
+    --clock-foreground: 0 0% 100%;
+    --clock-accent: 0 0% 75%;
+    --clock-muted: 180 15% 70%;
+    --clock-border: 180 25% 35%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 0 0% 85%;
+}
+
+.skin-mac-classic {
+    --clock-background: 40 20% 90%;
+    --clock-foreground: 0 0% 5%;
+    --clock-accent: 0 0% 30%;
+    --clock-muted: 40 10% 50%;
+    --clock-border: 40 15% 80%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 0 0% 40%;
+}
+
+.skin-commodore {
+    --clock-background: 240 60% 25%;
+    --clock-foreground: 200 80% 70%;
+    --clock-accent: 200 90% 60%;
+    --clock-muted: 220 50% 55%;
+    --clock-border: 240 50% 35%;
+    --clock-glow: 200 80% 65% / 0.3;
+    --clock-ring: 200 90% 60%;
+}
+
+.skin-game-boy {
+    --clock-background: 80 30% 60%;
+    --clock-foreground: 80 50% 15%;
+    --clock-accent: 80 40% 25%;
+    --clock-muted: 80 30% 35%;
+    --clock-border: 80 25% 50%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 80 45% 20%;
+}
+
+.skin-blueprint {
+    --clock-background: 215 70% 25%;
+    --clock-foreground: 0 0% 95%;
+    --clock-accent: 200 60% 70%;
+    --clock-muted: 210 40% 65%;
+    --clock-border: 215 60% 35%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 200 55% 75%;
+}
+
+.skin-grid-paper {
+    --clock-background: 0 0% 98%;
+    --clock-foreground: 210 50% 30%;
+    --clock-accent: 0 70% 50%;
+    --clock-muted: 210 30% 55%;
+    --clock-border: 210 20% 85%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 0 65% 55%;
+}
+
+/* ============================================
+   ANALOG SKINS
+   ============================================ */
+
+.skin-classic-chrono {
+    --clock-background: 0 0% 98%;
+    --clock-foreground: 0 0% 10%;
+    --clock-accent: 0 0% 30%;
+    --clock-muted: 0 0% 60%;
+    --clock-border: 0 0% 80%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 0 0% 70%;
+}
+
+.skin-minimal-bauhaus {
+    --clock-background: 0 0% 100%;
+    --clock-foreground: 0 0% 0%;
+    --clock-accent: 0 85% 50%;
+    --clock-muted: 0 0% 70%;
+    --clock-border: 0 0% 90%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 0 85% 50%;
+}
+
+.skin-railway-dial {
+    --clock-background: 0 0% 100%;
+    --clock-foreground: 0 0% 5%;
+    --clock-accent: 0 85% 50%;
+    --clock-muted: 0 0% 50%;
+    --clock-border: 0 0% 85%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 0 85% 50%;
+}
+
+.skin-skeleton-mechanical {
+    --clock-background: 0 0% 8%;
+    --clock-foreground: 40 30% 70%;
+    --clock-accent: 40 50% 50%;
+    --clock-muted: 40 20% 40%;
+    --clock-border: 40 30% 30%;
+    --clock-glow: 40 50% 50% / 0.3;
+    --clock-ring: 40 50% 50%;
+}
+
+.skin-neon-ring {
+    --clock-background: 0 0% 0%;
+    --clock-foreground: 280 100% 60%;
+    --clock-accent: 180 100% 50%;
+    --clock-muted: 280 50% 40%;
+    --clock-border: 280 50% 30%;
+    --clock-glow: 280 100% 60% / 0.6;
+    --clock-ring: 180 100% 50%;
+}
+
+.skin-soft-pastel {
+    --clock-background: 340 30% 95%;
+    --clock-foreground: 340 30% 30%;
+    --clock-accent: 200 60% 60%;
+    --clock-muted: 340 20% 60%;
+    --clock-border: 340 20% 85%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 200 60% 60%;
+}
+
+.skin-dark-brass {
+    --clock-background: 30 20% 10%;
+    --clock-foreground: 40 60% 60%;
+    --clock-accent: 40 70% 45%;
+    --clock-muted: 40 30% 35%;
+    --clock-border: 40 40% 25%;
+    --clock-glow: 40 60% 50% / 0.3;
+    --clock-ring: 40 70% 45%;
+}
+
+.skin-studio-white {
+    --clock-background: 0 0% 100%;
+    --clock-foreground: 0 0% 20%;
+    --clock-accent: 0 0% 40%;
+    --clock-muted: 0 0% 60%;
+    --clock-border: 0 0% 92%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 0 0% 75%;
+}
+
+/* New Analog Skins */
+
+.skin-submariner {
+    --clock-background: 0 0% 8%;
+    --clock-foreground: 0 0% 95%;
+    --clock-accent: 160 70% 45%;
+    --clock-muted: 160 30% 50%;
+    --clock-border: 0 0% 20%;
+    --clock-glow: 160 70% 45% / 0.3;
+    --clock-ring: 160 70% 45%;
+}
+
+.skin-apple-watch {
+    --clock-background: 0 0% 0%;
+    --clock-foreground: 0 0% 100%;
+    --clock-accent: 32 100% 50%;
+    --clock-muted: 0 0% 50%;
+    --clock-border: 0 0% 15%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 32 100% 50%;
+}
+
+.skin-pilot-navigator {
+    --clock-background: 220 20% 12%;
+    --clock-foreground: 0 0% 95%;
+    --clock-accent: 35 100% 55%;
+    --clock-muted: 220 15% 50%;
+    --clock-border: 220 20% 25%;
+    --clock-glow: 35 100% 50% / 0.3;
+    --clock-ring: 35 100% 55%;
+}
+
+.skin-rose-gold-luxury {
+    --clock-background: 350 20% 96%;
+    --clock-foreground: 350 30% 30%;
+    --clock-accent: 15 50% 60%;
+    --clock-muted: 350 20% 55%;
+    --clock-border: 350 15% 88%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 15 45% 65%;
+}
+
+.skin-ocean-blue {
+    --clock-background: 210 60% 20%;
+    --clock-foreground: 0 0% 95%;
+    --clock-accent: 200 80% 60%;
+    --clock-muted: 210 40% 55%;
+    --clock-border: 210 50% 30%;
+    --clock-glow: 200 80% 55% / 0.3;
+    --clock-ring: 200 80% 60%;
+}
+
+.skin-vintage-cream {
+    --clock-background: 40 40% 92%;
+    --clock-foreground: 30 30% 25%;
+    --clock-accent: 30 50% 40%;
+    --clock-muted: 35 25% 50%;
+    --clock-border: 40 30% 82%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 30 45% 50%;
+}
+
+.skin-carbon-fiber {
+    --clock-background: 0 0% 10%;
+    --clock-foreground: 0 0% 80%;
+    --clock-accent: 0 85% 55%;
+    --clock-muted: 0 0% 50%;
+    --clock-border: 0 0% 20%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 0 85% 55%;
+}
+
+.skin-moonlight-silver {
+    --clock-background: 220 15% 15%;
+    --clock-foreground: 220 10% 85%;
+    --clock-accent: 220 20% 60%;
+    --clock-muted: 220 12% 55%;
+    --clock-border: 220 15% 28%;
+    --clock-glow: 220 20% 55% / 0.3;
+    --clock-ring: 220 20% 60%;
+}
+
+.skin-forest-green {
+    --clock-background: 150 30% 20%;
+    --clock-foreground: 100 20% 85%;
+    --clock-accent: 140 50% 50%;
+    --clock-muted: 140 25% 55%;
+    --clock-border: 150 25% 30%;
+    --clock-glow: 140 50% 45% / 0.3;
+    --clock-ring: 140 50% 50%;
+}
+
+.skin-tokyo-night {
+    --clock-background: 260 40% 8%;
+    --clock-foreground: 340 100% 70%;
+    --clock-accent: 180 100% 50%;
+    --clock-muted: 300 50% 50%;
+    --clock-border: 260 35% 20%;
+    --clock-glow: 340 100% 65% / 0.5;
+    --clock-ring: 180 100% 50%;
+}
+
+.skin-desert-sand {
+    --clock-background: 35 30% 88%;
+    --clock-foreground: 30 40% 25%;
+    --clock-accent: 25 70% 50%;
+    --clock-muted: 30 25% 50%;
+    --clock-border: 35 25% 78%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 25 60% 55%;
+}
+
+.skin-arctic-explorer {
+    --clock-background: 200 30% 95%;
+    --clock-foreground: 200 40% 25%;
+    --clock-accent: 200 80% 50%;
+    --clock-muted: 200 30% 55%;
+    --clock-border: 200 25% 85%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 200 70% 55%;
+}
+
+.skin-burgundy-classic {
+    --clock-background: 350 40% 15%;
+    --clock-foreground: 40 30% 85%;
+    --clock-accent: 40 60% 55%;
+    --clock-muted: 350 25% 50%;
+    --clock-border: 350 35% 28%;
+    --clock-glow: 40 60% 50% / 0.3;
+    --clock-ring: 40 60% 55%;
+}
+
+.skin-electric-purple {
+    --clock-background: 280 50% 6%;
+    --clock-foreground: 280 80% 75%;
+    --clock-accent: 320 100% 60%;
+    --clock-muted: 290 50% 50%;
+    --clock-border: 280 45% 18%;
+    --clock-glow: 280 80% 65% / 0.6;
+    --clock-ring: 320 100% 60%;
+}
+
+.skin-mint-fresh {
+    --clock-background: 160 30% 95%;
+    --clock-foreground: 160 40% 25%;
+    --clock-accent: 160 60% 45%;
+    --clock-muted: 160 25% 55%;
+    --clock-border: 160 25% 85%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 160 55% 50%;
+}
+
+.skin-copper-steampunk {
+    --clock-background: 25 25% 12%;
+    --clock-foreground: 30 70% 65%;
+    --clock-accent: 25 80% 50%;
+    --clock-muted: 28 40% 45%;
+    --clock-border: 25 25% 25%;
+    --clock-glow: 30 70% 55% / 0.3;
+    --clock-ring: 25 80% 50%;
+}
+
+/* New Analog Skins - Gradients & Patterns */
+
+.skin-sunset-beach-analog {
+    --clock-background: 25 60% 15%;
+    --clock-foreground: 35 100% 75%;
+    --clock-accent: 340 80% 65%;
+    --clock-muted: 30 50% 50%;
+    --clock-border: 25 50% 28%;
+    --clock-glow: 35 100% 70% / 0.4;
+    --clock-ring: 340 80% 65%;
+}
+
+.skin-northern-lights-analog {
+    --clock-background: 200 40% 8%;
+    --clock-foreground: 160 80% 65%;
+    --clock-accent: 180 90% 50%;
+    --clock-muted: 170 50% 45%;
+    --clock-border: 200 35% 20%;
+    --clock-glow: 160 80% 55% / 0.5;
+    --clock-ring: 180 90% 50%;
+}
+
+.skin-cotton-candy-analog {
+    --clock-background: 300 40% 92%;
+    --clock-foreground: 280 50% 40%;
+    --clock-accent: 200 70% 60%;
+    --clock-muted: 290 35% 55%;
+    --clock-border: 300 30% 85%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 200 70% 60%;
+}
+
+.skin-midnight-galaxy-analog {
+    --clock-background: 260 50% 5%;
+    --clock-foreground: 270 60% 80%;
+    --clock-accent: 200 100% 70%;
+    --clock-muted: 265 40% 50%;
+    --clock-border: 260 45% 18%;
+    --clock-glow: 270 60% 70% / 0.4;
+    --clock-ring: 200 100% 70%;
+}
+
+.skin-golden-hour-analog {
+    --clock-background: 35 50% 92%;
+    --clock-foreground: 30 60% 25%;
+    --clock-accent: 40 90% 55%;
+    --clock-muted: 35 40% 50%;
+    --clock-border: 35 40% 82%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 40 85% 60%;
+}
+
+/* New Analog Skins - Dev Themes */
+
+.skin-dracula-analog {
+    --clock-background: 231 15% 18%;
+    --clock-foreground: 326 100% 74%;
+    --clock-accent: 135 94% 65%;
+    --clock-muted: 250 20% 55%;
+    --clock-border: 231 15% 30%;
+    --clock-glow: 326 100% 70% / 0.3;
+    --clock-ring: 135 94% 65%;
+}
+
+.skin-catppuccin-analog {
+    --clock-background: 240 21% 15%;
+    --clock-foreground: 316 72% 86%;
+    --clock-accent: 189 71% 73%;
+    --clock-muted: 260 30% 55%;
+    --clock-border: 240 20% 28%;
+    --clock-glow: 316 70% 80% / 0.3;
+    --clock-ring: 189 71% 73%;
+}
+
+.skin-nord-analog {
+    --clock-background: 220 16% 22%;
+    --clock-foreground: 218 27% 88%;
+    --clock-accent: 193 43% 67%;
+    --clock-muted: 219 20% 55%;
+    --clock-border: 220 16% 35%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 193 43% 67%;
+}
+
+/* New Analog Skins - Luxury */
+
+.skin-black-onyx-analog {
+    --clock-background: 0 0% 2%;
+    --clock-foreground: 45 90% 55%;
+    --clock-accent: 45 100% 50%;
+    --clock-muted: 45 50% 35%;
+    --clock-border: 45 30% 15%;
+    --clock-glow: 45 90% 50% / 0.3;
+    --clock-ring: 45 100% 50%;
+}
+
+.skin-marble-white-analog {
+    --clock-background: 0 0% 97%;
+    --clock-foreground: 0 0% 25%;
+    --clock-accent: 0 0% 50%;
+    --clock-muted: 0 0% 60%;
+    --clock-border: 0 0% 88%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 0 0% 60%;
+}
+
+.skin-emerald-luxury-analog {
+    --clock-background: 160 40% 10%;
+    --clock-foreground: 45 80% 60%;
+    --clock-accent: 150 70% 45%;
+    --clock-muted: 155 30% 40%;
+    --clock-border: 160 35% 22%;
+    --clock-glow: 45 80% 55% / 0.3;
+    --clock-ring: 150 70% 45%;
+}
+
+.skin-sapphire-royal-analog {
+    --clock-background: 220 50% 12%;
+    --clock-foreground: 220 30% 85%;
+    --clock-accent: 220 80% 60%;
+    --clock-muted: 220 30% 50%;
+    --clock-border: 220 45% 25%;
+    --clock-glow: 220 80% 55% / 0.3;
+    --clock-ring: 220 80% 60%;
+}
+
+/* New Analog Skins - Seasonal */
+
+.skin-cherry-blossom-analog {
+    --clock-background: 350 40% 95%;
+    --clock-foreground: 340 50% 35%;
+    --clock-accent: 340 70% 65%;
+    --clock-muted: 345 35% 55%;
+    --clock-border: 350 35% 88%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 340 65% 70%;
+}
+
+.skin-autumn-leaves-analog {
+    --clock-background: 30 30% 15%;
+    --clock-foreground: 35 80% 60%;
+    --clock-accent: 15 90% 50%;
+    --clock-muted: 30 50% 45%;
+    --clock-border: 30 28% 28%;
+    --clock-glow: 35 80% 55% / 0.3;
+    --clock-ring: 15 90% 50%;
+}
+
+.skin-winter-frost-analog {
+    --clock-background: 200 30% 96%;
+    --clock-foreground: 210 40% 35%;
+    --clock-accent: 200 70% 60%;
+    --clock-muted: 205 30% 55%;
+    --clock-border: 200 25% 88%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 200 65% 65%;
+}
+
+.skin-summer-vibes-analog {
+    --clock-background: 45 100% 95%;
+    --clock-foreground: 25 80% 35%;
+    --clock-accent: 35 100% 55%;
+    --clock-muted: 40 60% 50%;
+    --clock-border: 45 80% 88%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 35 95% 60%;
+}
+
+/* New Analog Skins - Classic Watch Styles */
+
+.skin-dive-watch {
+    --clock-background: 200 80% 20%;
+    --clock-foreground: 0 0% 100%;
+    --clock-accent: 120 70% 50%;
+    --clock-muted: 200 50% 60%;
+    --clock-border: 200 70% 30%;
+    --clock-glow: 120 70% 45% / 0.3;
+    --clock-ring: 120 70% 50%;
+}
+
+.skin-field-military {
+    --clock-background: 100 30% 20%;
+    --clock-foreground: 60 50% 70%;
+    --clock-accent: 60 70% 50%;
+    --clock-muted: 90 30% 50%;
+    --clock-border: 100 25% 30%;
+    --clock-glow: 60 50% 60% / 0.3;
+    --clock-ring: 60 70% 50%;
+}
+
+.skin-racing-chrono {
+    --clock-background: 0 0% 5%;
+    --clock-foreground: 0 0% 95%;
+    --clock-accent: 0 100% 50%;
+    --clock-muted: 0 0% 55%;
+    --clock-border: 0 0% 18%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 0 100% 50%;
+}
+
+.skin-dress-watch {
+    --clock-background: 0 0% 100%;
+    --clock-foreground: 210 30% 20%;
+    --clock-accent: 210 50% 40%;
+    --clock-muted: 210 20% 55%;
+    --clock-border: 210 15% 90%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 210 45% 50%;
+}
+
+/* New Analog Skins - Retro/Nostalgia */
+
+.skin-windows-95-analog {
+    --clock-background: 180 60% 35%;
+    --clock-foreground: 0 0% 100%;
+    --clock-accent: 0 0% 75%;
+    --clock-muted: 0 0% 85%;
+    --clock-border: 0 0% 90%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 0 0% 75%;
+}
+
+.skin-mac-classic-analog {
+    --clock-background: 40 25% 88%;
+    --clock-foreground: 0 0% 10%;
+    --clock-accent: 0 0% 30%;
+    --clock-muted: 0 0% 45%;
+    --clock-border: 40 20% 75%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 0 0% 35%;
+}
+
+.skin-commodore-64-analog {
+    --clock-background: 220 60% 35%;
+    --clock-foreground: 200 80% 70%;
+    --clock-accent: 30 80% 55%;
+    --clock-muted: 200 50% 55%;
+    --clock-border: 220 50% 45%;
+    --clock-glow: 200 80% 65% / 0.3;
+    --clock-ring: 30 80% 55%;
+}
+
+.skin-game-boy-analog {
+    --clock-background: 75 30% 55%;
+    --clock-foreground: 80 20% 15%;
+    --clock-accent: 80 25% 25%;
+    --clock-muted: 75 20% 35%;
+    --clock-border: 75 25% 45%;
+    --clock-glow: 0 0% 0% / 0;
+    --clock-ring: 80 25% 25%;
+}
+
+/* ============================================
+   Ambient Gradient Animation (for Aurora & Cyber skins)
+   ============================================ */
+
+.ambient-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(var(--gradient-angle),
+            var(--color-1),
+            var(--color-2),
+            var(--color-3));
+    opacity: 0.15;
+    animation: ambient-breathe 12s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes ambient-breathe {
+
+    0%,
+    100% {
+        --color-1: hsl(280, 80%, 60%);
+        --color-2: hsl(220, 80%, 50%);
+        --color-3: hsl(180, 80%, 50%);
+        --gradient-angle: 0deg;
+        opacity: 0.15;
+    }
+
+    33% {
+        --color-1: hsl(220, 80%, 50%);
+        --color-2: hsl(180, 80%, 50%);
+        --color-3: hsl(320, 80%, 60%);
+        --gradient-angle: 120deg;
+        opacity: 0.2;
+    }
+
+    66% {
+        --color-1: hsl(180, 80%, 50%);
+        --color-2: hsl(320, 80%, 60%);
+        --color-3: hsl(280, 80%, 60%);
+        --gradient-angle: 240deg;
+        opacity: 0.15;
+    }
+}
+
+/* ============================================
+   Glow Effects
+   ============================================ */
+
+.clock-glow {
+    filter: drop-shadow(0 0 10px hsl(var(--clock-glow)));
+}
+
+.clock-glow-intense {
+    filter: drop-shadow(0 0 20px hsl(var(--clock-glow))) drop-shadow(0 0 40px hsl(var(--clock-glow)));
+}
+
+.text-glow {
+    text-shadow: 0 0 10px hsl(var(--clock-glow)), 0 0 20px hsl(var(--clock-glow));
+}
+
+.text-glow-intense {
+    text-shadow:
+        0 0 10px hsl(var(--clock-glow)),
+        0 0 20px hsl(var(--clock-glow)),
+        0 0 40px hsl(var(--clock-glow)),
+        0 0 80px hsl(var(--clock-glow));
+}
+
+/* ============================================
+   Typography
+   ============================================ */
+
+.font-tabular {
+    font-variant-numeric: tabular-nums;
+}
+
+/* ============================================
+   Utility Classes
+   ============================================ */
+
+.transition-skin {
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+}
+
+/* Hide cursor in fullscreen after inactivity */
+.cursor-hidden {
+    cursor: none !important;
+}
+
+.cursor-hidden * {
+    cursor: none !important;
+}
+
+/* ============================================
+   Reduced Motion
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    .ambient-gradient {
+        animation: none;
+        opacity: 0.1;
+    }
+
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ============================================
+   Scrollbar Hide Utility
+   ============================================ */
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* ============================================
+   Base Styles
+   ============================================ */
+
+body {
+    background-color: hsl(var(--clock-background));
+    color: hsl(var(--clock-foreground));
+    font-family: var(--font-sans);
+    transition: background-color 0.5s ease, color 0.5s ease;
+    overflow: hidden;
+}

@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# eva.watch <img src="public/icon.svg" alt="eva.watch icon" width="32" height="32" style="vertical-align: middle;" />
 
-## Getting Started
+> A luxury web clock with beautiful skins, world clocks, and smooth animations. Set it as your homepage.
 
-First, run the development server:
+<p align="center">
+  <img src="public/eva.watch-demo.gif" alt="eva.watch demo" width="800" />
+</p>
+
+## ✨ Features
+
+- 🎨 **48 stunning clock skins** — 24 digital + 24 analog themes
+- 🌍 **World clock support** — 50+ cities with drag-and-drop reordering
+- ⌨️ **Keyboard shortcuts** — Power user friendly
+- 📱 **PWA support** — Install as a native app
+- 🔊 **Optional tick sound** — Authentic mechanical clock tick
+- 🖥️ **Fullscreen mode** — With wake lock to prevent screen sleep
+- 📦 **Embeddable widgets** — Add clocks to your website
+- 🌓 **Reduced motion support** — Respects accessibility preferences
+
+## 🚀 Quick Start
 
 ```bash
+git clone https://github.com/superzero11/eva.watch.git
+cd eva.watch
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⌨️ Keyboard Shortcuts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Key | Action |
+|-----|--------|
+| `/` | Search cities |
+| `S` | Toggle settings drawer |
+| `F` | Toggle fullscreen |
+| `T` | Toggle digital/analog |
+| `D` | Cycle seconds display |
+| `Q` | Toggle tick sound |
+| `G` | Toggle grid layout |
+| `E` | Open embed widget modal |
+| `←` `→` | Cycle through skins |
+| `Escape` | Close modals |
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js 16** with Turbopack & React Compiler
+- **React 19**
+- **TypeScript** (strict mode)
+- **Tailwind CSS v4**
+- **Zustand** for state management
+- **Framer Motion** for animations
+- **@dnd-kit** for drag-and-drop
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📦 Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+npm run start
+```
 
-## Deploy on Vercel
+Or deploy to [Vercel](https://vercel.com) with one click:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/superzero11/eva.watch)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎨 Skins
+
+**Digital skins:** Zen Minimal, OLED Night, Terminal Green, Swiss Railway, Aurora Glass, Cyber Neon, Paper Book, Monochrome Brutal, Retro LCD, Sunset Glow, Ocean Deep, Rose Gold, Matrix Rain, Midnight Purple, Coffee Shop, Arctic Ice, Spotify Dark, Red Ember, Lavender Dream, Forest Night, Warm Sand, Electric Blue, Newspaper, Synthwave
+
+**Analog skins:** Classic Chrono, Minimal Bauhaus, Railway Dial, Skeleton Mechanical, Neon Ring, Soft Pastel, Dark Brass, Studio White, Submariner, Apple Watch, Pilot Navigator, Rose Gold Luxury, Ocean Blue, Vintage Cream, Carbon Fiber, Moonlight Silver, Forest Green, Tokyo Night, Desert Sand, Arctic Explorer, Burgundy Classic, Electric Purple, Mint Fresh, Copper Steampunk
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) first.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+MIT — see [LICENSE](LICENSE) for details.
+
+---
+
+<p align="center">
+  Made with ❤️ for people who appreciate beautiful clocks
+</p>
